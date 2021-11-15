@@ -4,12 +4,11 @@ import java.util.Arrays;
 
 public class lesson9 {
     public static void main(String[] args) {
-        int[] mas1 = new int[]{1, 2, 3};
+        int[] mas1 = new int[]{1, 2, 3, 8, 10};
         int[] mas2 = new int[]{4, 5, 6, 7};
+        int sum = methodsum(mas1);
+        System.out.println(sum);
 
-        int[] mas3 = method(mas1, mas2);
-
-        System.out.println(Arrays.toString(mas3));
 
     }
       /*  String poloz = dlt(-10);
@@ -22,16 +21,29 @@ public class lesson9 {
         }
         else {return "-";}*/
 
-    public static int[] method(int[] arr1, int[] arr2) {
-        int[] mas3 = new int[arr1.length + arr2.length];
-        for (int i = 0; i < arr1.length; i++) {
+  /* public static int[] method(int[] mas1, int[] mas2) {
+       public static int methodsum (int[] mas1) {
+           int sum=0;
+        int[] mas3 = new int[mas1.length + mas2.length];
+        for (int i = 0; i < mas1.length; i++) {
+            sum =sum+ mas1[i];
 
-                mas3[i] = arr1[i];
+              } return sum;
+
+                mas3[i] = mas1[i];
             }
-            for (int i = arr1.length, j=0; i < mas3.length; i++, j++) {
-                mas3[i] = arr2[j];
+            for (int i = mas1.length, j=0; i < mas3.length; i++, j++) {
+                mas3[i] = mas2[j];
 
-            } return mas3;
+            } return mas3;*/
+
+   public static int methodsum(int[] mas1) {
+        int sum=0;
+              for (int i = 0; i < mas1.length; i++) {
+
+                  sum =sum+ mas1[i];
+
+              } return sum;
 
         }
 
